@@ -6,6 +6,7 @@ const Render = Matter.Render;
 const Constraint = Matter.Constraint;
 
 var treeObj, stoneObj, groundObject;
+
 var mango1,
   mango2,
   mango3,
@@ -52,7 +53,7 @@ function setup() {
   groundObject = new ground(width / 2, 600, width, 20);
   //create launcherObject here
   launcherObject = new launcher(stoneObj.body, { x: 235, y: 420 });
-  new launcher(stoneObj.body, { x: 235, y: 420 });
+
   Engine.run(engine);
 }
 
@@ -80,7 +81,6 @@ function draw() {
   groundObject.display();
   // display launcher object here
 
-  launcherObject = new launcher(stoneObj.body, { x: 235, y: 420 });
   launcherObject.display();
   detectollision(stoneObj, mango1);
   detectollision(stoneObj, mango2);
