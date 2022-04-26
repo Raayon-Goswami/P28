@@ -26,7 +26,7 @@ class launcher {
       var pointB = this.pointB;
 
       strokeWeight(2);
-      line(pointA.X, pointA.Y, pointB.X, pointB.Y);
+      line(pointA.x, pointA.y, pointB.x, pointB.y);
     }
   }
 }
